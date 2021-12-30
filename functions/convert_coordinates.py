@@ -131,7 +131,7 @@ def ecef2geodetic(x, y, z, spheroid, units='rad'):
                 if DEBUG: print("Exiting on error limit")
                 exit_flag = True
             elif count >= loop_limit:
-                print("Exiting on loop limit")
+                if DEBUG: print("Exiting on loop limit")
                 exit_flag = True
 
             # increment counter
